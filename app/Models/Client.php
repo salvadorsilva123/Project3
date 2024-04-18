@@ -17,3 +17,12 @@ class Client extends Model
         ];
             //$fillable o $guarded
 }
+
+/*
+protected $fillable = [
+  'title',
+  'body',
+];
+
+
+*/
