@@ -11,5 +11,8 @@ class ClientController extends Controller
         return view("clients.index" );
         
     }
+    public function create(){
+        return view('clients.create');
+    }
 
 }

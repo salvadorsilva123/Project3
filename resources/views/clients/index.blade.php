@@ -9,7 +9,9 @@
     <body>
         <p>Pagina Clientes</p>
 
-<button>crear</button>
+        <a href="{{ route('create.client') }}">
+            <button>crear</button>
+        </a>
 <table class="table">
   <thead>
     <tr>
