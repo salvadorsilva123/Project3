@@ -19,4 +19,15 @@ Route::get('/', function () {
 });
 
 Route::get('/clientes', [ClientController::class,'index'])->name('index.client');
+
 Route::get('/clientes/crear', [ClientController::class,'create'])->name('create.client');
+
+Route::put('/clientes/edit', [ClientController::class,'edit'])->name('client.edit');
+
+Route::post('/clientes', [ClientController::class, 'store'])->name('client.store');
+//Route::post('/clientes/store', 'ClientController@store')->name('store');
+
+Route::delete('clientes/{id}', [ClientController::class, 'destroy'])->name('client.destroy');
+
+//auth::routes();
+//Route::resource('/clientes', ClientController::class);

@@ -7,15 +7,17 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="">
+    <form action="{{route('client.store')}}"      method="POST">
+        @csrf
+        <label for="name"></label>
         <input type="text" name='name' placeholder="nombre"><br>
         <input type="text" name='last_name' placeholder="apellido"><br>
         <input type="text" name='phone' placeholder="telefono"><br>
         <input type="text" name='mail' placeholder="correo"><br>
         <input type="text" name='address' placeholder="direccion"><br>
         <input type="text" name='id' placeholder="id"><br>
-
-    <button>crear</button>
+        
+        <button>crear</button>
     </form>
     <a href="{{ route('index.client') }}">
         <button>Volver</button>
