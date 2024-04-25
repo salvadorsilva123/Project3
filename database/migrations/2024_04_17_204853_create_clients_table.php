@@ -13,7 +13,7 @@ return new class extends Migration{
             $table->id();
             $table->string('name'); //varchar
             $table->string('last_name'); //varchar
-            $table->string('mail')->unique();
+            $table->string('email')->unique();
             $table->string('phone');
             $table->string('address');
             $table->rememberToken();

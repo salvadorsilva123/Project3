@@ -13,9 +13,8 @@
         <input type="text" name='name' placeholder="nombre"><br>
         <input type="text" name='last_name' placeholder="apellido"><br>
         <input type="text" name='phone' placeholder="telefono"><br>
-        <input type="text" name='mail' placeholder="correo"><br>
+        <input type="text" name='email' placeholder="correo"><br>
         <input type="text" name='address' placeholder="direccion"><br>
-        <input type="text" name='id' placeholder="id"><br>
         
         <button>crear</button>
     </form>
